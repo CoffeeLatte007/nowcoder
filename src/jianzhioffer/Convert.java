@@ -6,6 +6,7 @@ package jianzhioffer;
  */
 
 public class Convert {
+
     TreeNode lastmaxnode=null;
     public TreeNode Convert(TreeNode pRootOfTree) {
         convertnode(pRootOfTree);
