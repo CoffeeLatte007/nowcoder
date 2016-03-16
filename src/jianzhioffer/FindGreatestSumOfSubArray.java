@@ -1,5 +1,7 @@
 package jianzhioffer;
 
+import java.util.HashMap;
+
 /**
  * [1,-2,3,10,-4,7,2,-5]
  * Created by lizhaoz on 2016/3/8.
