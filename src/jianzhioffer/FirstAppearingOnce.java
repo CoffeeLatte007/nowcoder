@@ -33,4 +33,15 @@ public class FirstAppearingOnce {
         }
         return ch;
     }
+
+    public static void main(String[] args) {
+        FirstAppearingOnce firstAppearingOnce=new FirstAppearingOnce();
+        firstAppearingOnce.Insert('g');
+        firstAppearingOnce.Insert('o');
+        firstAppearingOnce.Insert('o');
+        firstAppearingOnce.Insert('g');
+        firstAppearingOnce.Insert('l');
+        firstAppearingOnce.Insert('e');
+        System.out.println(firstAppearingOnce.FirstAppearingOnce());
+    }
 }

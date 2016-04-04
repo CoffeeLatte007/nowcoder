@@ -1,5 +1,9 @@
 package jianzhioffer;
 
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
 /**
  * 输入两个链表，找出它们的第一个公共结点。
  * 具体策略 一条链表先走n步
@@ -9,6 +13,7 @@ package jianzhioffer;
 public class FindFirstCommonNode {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         if(pHead1==null||pHead2==null){
+
             return null;
         }
         ListNode p1=pHead1,p2=pHead2;
@@ -44,5 +49,11 @@ public class FindFirstCommonNode {
             pHead2=pHead2.next;
         }
         return pHead1;
+    }
+}
+class MyLoader extends ClassLoader{
+    @Override
+    protected Class<?> findClass(String name) throws ClassNotFoundException {
+        return super.findClass(name);
     }
 }
