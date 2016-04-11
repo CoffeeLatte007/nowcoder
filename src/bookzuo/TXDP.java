@@ -6,7 +6,7 @@ package bookzuo;
 
 public class TXDP {
     public static void main(String[] args) {
-        String str="BABCBAB";
+        String str="adcbacdcabca";
         System.out.println(findLSP(str));
     }
 
